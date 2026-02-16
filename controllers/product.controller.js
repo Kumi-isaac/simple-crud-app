@@ -1,4 +1,4 @@
-const Product = reqiure("./models/product.model.js");
+const Product = reqiure("../models/product.model");
 
 const getProducts = async (rq, res) => {
   try {
