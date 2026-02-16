@@ -1,5 +1,5 @@
 const express = require("express");
-const product = reqiure("../models/product.model.js");
+const Product = reqiure("../models/product.model.js");
 const router = express.Router();
 const {
   getProducts,
