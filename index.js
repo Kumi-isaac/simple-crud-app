@@ -29,7 +29,7 @@ app.get("/api/products/:id", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
+// moongoose
 mongoose
   .connect(
     "mongodb+srv://ifrimpong259_db_user:QT60JByRkFQE22t1@backendbd.0adh403.mongodb.net/Node-APi?appName=BackendBD",
