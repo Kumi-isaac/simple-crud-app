@@ -16,7 +16,7 @@ const ProductSchema = mongoose.Schema(
     price: {
       type: Number,
       required: true,
-      quantity: 0,
+      default: 0,
     },
 
     image: {
@@ -25,10 +25,10 @@ const ProductSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   },
 );
 
-const Product = mongoose.model("product", ProductSchema);
+const Product = mongoose.model("Product", ProductSchema);
 
 module.exports = Product;
