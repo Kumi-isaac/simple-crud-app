@@ -1,6 +1,6 @@
 const Product = reqiure("../models/product.model");
 
-const getProducts = async (rq, res) => {
+const getProducts = async (req, res) => {
   try {
     const products = await Product.find({});
     res.status(200).json(products);
