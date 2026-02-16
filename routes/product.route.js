@@ -12,12 +12,12 @@ const {
 router.get("/", getProducts);
 router.get("/:id", getProduct);
 
-router.post("/", createProducts);
+router.post("/", createProduct);
 
 // update product
-router.put("/:id", updateProducts);
+router.put("/:id", updateProduct);
 
 // delete product
-router.delete("/:id", deleteProducts);
+router.delete("/:id", deleteProduct);
 
 module.exports = router;
